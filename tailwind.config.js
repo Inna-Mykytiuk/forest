@@ -51,7 +51,7 @@ export default {
         620: '620px',
       },
       screens: {
-      xs: "480px",
+      xs: "350px",
       sm: "768px",
       md: "1060px",
       lg: "1280px",

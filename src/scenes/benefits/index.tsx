@@ -3,6 +3,7 @@ import {
   UserGroupIcon,
   GlobeAsiaAustraliaIcon,
 } from "@heroicons/react/24/solid";
+import useMediaQuery from "../../hooks/useMediaQuery";
 import { SelectedPage, BenefitType } from "../../shared/types";
 import { motion } from "framer-motion";
 import BenefitsPageGraphic from "../../assets/branch/branch1.png";
@@ -48,6 +49,7 @@ type Props = {
 
 const Benefits = ({ setSelectedPage }: Props) => {
   const flexBetween = "flex flex-col items-center justify-between";
+  const isAboveMediumScreens = useMediaQuery("(min-width: 1060px");
 
   return (
     <section
@@ -150,7 +152,8 @@ const Benefits = ({ setSelectedPage }: Props) => {
 
               {/* BUTTON */}
               <div className="relative mt-16">
-                <img alt="wtf-sponsor" src={Branch} className="w-[500px] h-[600px] absolute -bottom-48 -right-20 z-[-1] "/>
+                {isAboveMediumScreens && <img alt="wtf-sponsor" src={Branch} className="w-[500px] h-[600px]  absolute -bottom-48 -right-20 z-[-1] "/>}
+                
                   <ActionButton setSelectedPage={setSelectedPage}>
                     Join Now
                   </ActionButton>
