@@ -9,8 +9,8 @@ import BenefitsPageGraphic from "../../assets/branch/branch1.png";
 import HText from "../../shared/HText";
 import Benefit from "./Benefit";
 import ActionButton from "../../shared/ActionButton";
-import Leaf from "../../assets/leaf22.png"
-import Leaf2 from "../../assets/leaf23.png"
+
+import Branch from "../../assets/branch/leaf1.png"
 
 
 
@@ -109,7 +109,6 @@ const Benefits = ({ setSelectedPage }: Props) => {
             <div>
               {/* TITLE */}
               <div className="relative">
-                <img alt="wtf-sponsor" src={Leaf2} className="w-[100px] h-[100px] absolute -top-20 -left-20 z-[-1] "/>
                   <motion.div
                     initial="hidden"
                     whileInView="visible"
@@ -140,24 +139,18 @@ const Benefits = ({ setSelectedPage }: Props) => {
                 }}
               >
                 <p className="my-5">
-                  Nascetur aenean massa auctor tincidunt. Iaculis potenti amet
-                  egestas ultrices consectetur adipiscing ultricies enim. Pulvinar
-                  fames vitae vitae quis. Quis amet vulputate tincidunt at in
-                  nulla nec. Consequat sed facilisis dui sit egestas ultrices
-                  tellus. Ullamcorper arcu id pretium sapien proin integer nisl.
-                  Felis orci diam odio.
+                Forests are incredibly rich in biodiversity, providing habitat and sustenance for countless plant and animal species. They are often referred to as the "lungs of the Earth" for their role in supporting diverse ecosystems.
+                Forests are essential for industries such as forestry, agriculture, and tourism, contributing to economic growth and stability in many regions.
+                Forests are natural watersheds, regulating the flow of water in rivers and streams. They help prevent erosion, filter pollutants, and maintain the quality of freshwater sources.
                 </p>
                 <p className="mb-5">
-                  Fringilla a sed at suspendisse ut enim volutpat. Rhoncus vel est
-                  tellus quam porttitor. Mauris velit euismod elementum arcu neque
-                  facilisi. Amet semper tortor facilisis metus nibh. Rhoncus sit
-                  enim mattis odio in risus nunc.
+                Forests are not only a source of beauty and inspiration but also critical for the well-being of the planet and all its inhabitants, including humans. Protecting and conserving forests is a shared responsibility for the health of our planet and future generations.
                 </p>
               </motion.div>
 
               {/* BUTTON */}
               <div className="relative mt-16">
-                <img alt="wtf-sponsor" src={Leaf} className="w-[100px] h-[100px] absolute -bottom-20 right-40 z-[-1] "/>
+                <img alt="wtf-sponsor" src={Branch} className="w-[500px] h-[600px] absolute -bottom-48 -right-20 z-[-1] "/>
                   <ActionButton setSelectedPage={setSelectedPage}>
                     Join Now
                   </ActionButton>

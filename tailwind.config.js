@@ -106,7 +106,6 @@ export default {
       content: {
         evolvetext: "url('./src/assets/forestT.png')",
         abstractwaves: "url('./src/assets/AbstractWaves.png')",
-        sparkles: "url('./src/assets/Sparkles.png')",
         circles: "url('./src/assets/Circles.png')",
       },  
     },
