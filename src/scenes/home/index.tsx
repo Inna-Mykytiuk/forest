@@ -97,7 +97,7 @@ const Home = ({ setSelectedPage }: Props) => {
         </motion.div>
         {/* SPONSORS */}
         {isAboveMediumScreens && (
-          <div className="h-[150px] w-full bg-primary200 py-10 mt-[80px] backdrop-opacity-10 backdrop-invert bg-primary200/60"
+          <div className="h-[150px] w-full bg-primary200 py-4 xl:py-10 mt-[40px] xl:mt-[80px] backdrop-opacity-10 backdrop-invert bg-primary200/60"
           // style={{
           //   backdropFilter: 'blur(10px)',
           //   backgroundColor: 'rgba(90, 72, 72, 0.3)',

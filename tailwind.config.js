@@ -74,6 +74,9 @@ export default {
         mainWhite: '#ffffff',
         mainGreen: '#4e5431',
         secondGreen:'#9fb142',
+        borderDark:'#78814d',
+        borderLight:'#b3bb8c',
+        borderBg:'#c4c8b1',
 
         gray20: "#4e5431",
         gray50: "#EFE6E6",
@@ -105,7 +108,8 @@ export default {
         abstractwaves: "url('./src/assets/AbstractWaves.png')",
         sparkles: "url('./src/assets/Sparkles.png')",
         circles: "url('./src/assets/Circles.png')",
-        leaf:"url('./src/assets/branch/leaf1.png')",
+        leaf:"url('./src/assets/branch/leaf22.png')",
+        leafRev:"url('./src/assets/branch/leaf23.png')",
       },  
     },
     

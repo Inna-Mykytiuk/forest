@@ -1,7 +1,7 @@
 import {
   HomeModernIcon,
   UserGroupIcon,
-  AcademicCapIcon,
+  GlobeAsiaAustraliaIcon,
 } from "@heroicons/react/24/solid";
 import { SelectedPage, BenefitType } from "../../shared/types";
 import { motion } from "framer-motion";
@@ -10,24 +10,26 @@ import HText from "../../shared/HText";
 import Benefit from "./Benefit";
 import ActionButton from "../../shared/ActionButton";
 
+
+
 const benefits: Array<BenefitType> = [
   {
     icon: <HomeModernIcon className="h-6 w-6" />,
-    title: "State of the Art Facilities",
+    title: "Climate Regulation",
     description:
-      "Neque adipiscing amet amet enim. Feugiat dolor enim fermentum in a in lectus pellentesque. Ullamcorper et.",
+      "Forests act as carbon sinks, absorbing carbon dioxide from the atmosphere and releasing oxygen through photosynthesis. This process helps mitigate climate change by reducing greenhouse gas levels.",
   },
   {
     icon: <UserGroupIcon className="h-6 w-6" />,
-    title: "100's of Diverse Classes",
+    title: "Medicinal Resources",
     description:
-      "Eu ipsum id egestas risus tempus enim semper felis quis. Nec consectetur ac venenatis facilisi est. Eget ac turpis id.",
+      " A significant portion of the world's medicinal plants is found in forests. Indigenous and traditional knowledge of forest plants has contributed to modern medicine.",
   },
   {
-    icon: <AcademicCapIcon className="h-6 w-6" />,
-    title: "Expert and Pro Trainers",
+    icon: <GlobeAsiaAustraliaIcon className="h-6 w-6" />,
+    title: "Global Ecosystem Balance",
     description:
-      "Fusce vestibulum aliquam ut cras. Nisl lectus egestas sapien nisl. Lacus at mi sit pellentesque. Congue parturient.",
+      "Forests are interconnected with other ecosystems and help maintain the overall balance of the planet's ecological systems. Their destruction can lead to cascading environmental effects.",
   },
 ];
 
@@ -68,9 +70,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
           >
             <HText>Explore, Adventure, and Reconnect in the Forest</HText>
             <p className="my-5 text-sm">
-              We provide world class fitness equipment, trainers and classes to
-              get you to your ultimate fitness goals with ease. We provide true
-              care into each and every member.
+            Forests play a vital role in our world, and their importance cannot be overstated.
             </p>
           </motion.div>
 
@@ -107,7 +107,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
             <div>
               {/* TITLE */}
               <div className="relative">
-                <div className="before:absolute before:-top-20 before:-left-20 before:z-[1] before:content-abstractwaves">
+                <div className="before:absolute before:-top-20 before:-left-20 before:-z-[1] before:content-leafRev">
                   <motion.div
                     initial="hidden"
                     whileInView="visible"
