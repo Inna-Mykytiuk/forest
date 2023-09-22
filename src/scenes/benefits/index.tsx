@@ -9,6 +9,8 @@ import BenefitsPageGraphic from "../../assets/branch/branch1.png";
 import HText from "../../shared/HText";
 import Benefit from "./Benefit";
 import ActionButton from "../../shared/ActionButton";
+import Leaf from "../../assets/leaf22.png"
+import Leaf2 from "../../assets/leaf23.png"
 
 
 
@@ -107,7 +109,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
             <div>
               {/* TITLE */}
               <div className="relative">
-                <div className="before:absolute before:-top-20 before:-left-20 before:-z-[1] before:content-['url('./src/assets/leaf23.png')']">
+                <img alt="wtf-sponsor" src={Leaf2} className="w-[100px] h-[100px] absolute -top-20 -left-20 z-[-1] "/>
                   <motion.div
                     initial="hidden"
                     whileInView="visible"
@@ -123,7 +125,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
                       <span className="text-primary500">FIT</span>
                     </HText>
                   </motion.div>
-                </div>
+
               </div>
 
               {/* DESCRIPT */}
@@ -155,11 +157,10 @@ const Benefits = ({ setSelectedPage }: Props) => {
 
               {/* BUTTON */}
               <div className="relative mt-16">
-                <div className=" before:absolute before:-bottom-20 before:right-40 before:z-[-1] before:content-leaf">
+                <img alt="wtf-sponsor" src={Leaf} className="w-[100px] h-[100px] absolute -bottom-20 right-40 z-[-1] "/>
                   <ActionButton setSelectedPage={setSelectedPage}>
                     Join Now
                   </ActionButton>
-                </div>
               </div>
 
             </div>
