@@ -5,7 +5,7 @@ import {
 } from "@heroicons/react/24/solid";
 import { SelectedPage, BenefitType } from "../../shared/types";
 import { motion } from "framer-motion";
-import BenefitsPageGraphic from "../../assets/BenefitsPageGraphic.png";
+import BenefitsPageGraphic from "../../assets/branch/branch1.png";
 import HText from "../../shared/HText";
 import Benefit from "./Benefit";
 import ActionButton from "../../shared/ActionButton";
@@ -66,7 +66,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
               visible: { opacity: 1, x: 0 },
             }}
           >
-            <HText>MORE THAN JUST GYM.</HText>
+            <HText>Explore, Adventure, and Reconnect in the Forest</HText>
             <p className="my-5 text-sm">
               We provide world class fitness equipment, trainers and classes to
               get you to your ultimate fitness goals with ease. We provide true
@@ -155,7 +155,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
 
               {/* BUTTON */}
               <div className="relative mt-16">
-                <div className="before:absolute before:-bottom-20 before:right-40 before:z-[-1] before:content-sparkles">
+                <div className=" before:absolute before:-bottom-20 before:right-40 before:z-[-1] before:content-leaf">
                   <ActionButton setSelectedPage={setSelectedPage}>
                     Join Now
                   </ActionButton>

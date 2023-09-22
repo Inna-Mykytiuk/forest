@@ -105,6 +105,7 @@ export default {
         abstractwaves: "url('./src/assets/AbstractWaves.png')",
         sparkles: "url('./src/assets/Sparkles.png')",
         circles: "url('./src/assets/Circles.png')",
+        leaf:"url('./src/assets/branch/leaf1.png')",
       },  
     },
     
