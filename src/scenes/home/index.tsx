@@ -3,8 +3,6 @@ import useMediaQuery from "../../hooks/useMediaQuery";
 import ActionButton from "../../shared/ActionButton";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
-// import HomePageText from "../../assets/HomePageText.png";
-
 import HomePageGraphic from "../../assets/branch/branch2.png";
 import SponsorForbes from "../../assets/sponsors/forbes.png";
 import SponsorWtf from "../../assets/sponsors/wtf.png";
@@ -51,8 +49,10 @@ const Home = ({ setSelectedPage }: Props) => {
                 <div className="flex flex-col">
                   <div className="before:absolute before:-top-24 xl:before:-top-32 md:before:content-evolvetext before:-left-20 before:z-[-1]"></div>
                   {/* <img alt="home-page-text" src={HomePageText}></img> */}
-                  <p className="md:text-[92px] text-[72px] text-rose800 font-black font-family leading-[100px]" >Wild Forest</p>
-                  <p className="text-[42px] text-rose800 font-thin tracking-[5px]">Rediscover Wonder.</p>
+                  <p className="md:text-[92px] text-[72px] text-rose800 font-black font-family leading-[100px]">Wild Forest</p>
+                  <p className="text-[42px] text-rose800 font-thin tracking-[5px]">Rediscover <span className="text-secondary400">Wonder</span>
+                  </p>
+                  
                 </div>
               </div>
 

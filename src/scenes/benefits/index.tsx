@@ -73,7 +73,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
             }}
           >
             <HText>Explore, Adventure, and Reconnect in the Forest</HText>
-            <p className="my-5 text-sm">
+            <p className="my-5 text-md">
             Forests play a vital role in our world, and their importance cannot be overstated.
             </p>
           </motion.div>
@@ -122,8 +122,8 @@ const Benefits = ({ setSelectedPage }: Props) => {
                     }}
                   >
                     <HText>
-                      MILLIONS OF HAPPY MEMBERS GETTING{" "}
-                      <span className="text-primary500">FIT</span>
+                    "The Vital Importance of Forests: Nature's Lifeline and Economic Backbone"{" "}
+                      <span className="text-secondary400">Backbone</span>
                     </HText>
                   </motion.div>
 

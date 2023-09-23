@@ -1,19 +1,19 @@
 import { SelectedPage, ClassType } from "../../shared/types";
 import { motion } from "framer-motion";
-import { classes } from "./classes";
+import { facts } from "./facts";
 import HText from "../../shared/HText";
-import Class from "./Class";
+import Class from "./Fact";
 
 
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 };
 
-const OurClasses = ({ setSelectedPage }: Props) => {
+const TreesFacts = ({ setSelectedPage }: Props) => {
   const flexBetween = "flex flex-col items-center justify-between";
 
   return (
-    <section id="ourclasses" className="w-full bg-primary100 py-40">
+    <section id="facts" className="w-full bg-borderLight py-40">
       
         <motion.div
           onViewportEnter={() => setSelectedPage(SelectedPage.OurClasses)}
@@ -32,12 +32,9 @@ const OurClasses = ({ setSelectedPage }: Props) => {
             }}
           >
             <div className="md:w-3/5">
-              <HText>OUR CLASSES</HText>
+              <HText>Some facts</HText>
               <p className="py-5">
-                Fringilla a sed at suspendisse ut enim volutpat. Rhoncus vel est
-                tellus quam porttitor. Mauris velit euismod elementum arcu neque
-                facilisi. Amet semper tortor facilisis metus nibh. Rhoncus sit
-                enim mattis odio in risus nunc.
+              Forests exemplify the beauty of interconnectedness in nature, where cooperation and mutual support are key to the survival and flourishing of all its inhabitants, from the tallest trees to the smallest organisms on the forest floor.
               </p>
             </div>
           </motion.div>
@@ -46,7 +43,7 @@ const OurClasses = ({ setSelectedPage }: Props) => {
           overflow-x-auto overflow-y-hidden
           scrollbar-thin scrollbar-thumb-red-400 scrollbar-track-gray-100">
             <ul className="w-[2800px] whitespace-nowrap">
-              {classes.map((item: ClassType, index) => (
+              {facts.map((item: ClassType, index) => (
                 <Class
                   key={`${item.name}-${index}`}
                   name={item.name}
@@ -66,4 +63,4 @@ const OurClasses = ({ setSelectedPage }: Props) => {
   );
 };
 
-export default OurClasses;
+export default TreesFacts;
