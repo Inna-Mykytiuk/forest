@@ -56,18 +56,6 @@ export default {
       md: "1060px",
       lg: "1280px",
       xl: "1540px",
-      // xxL: "1540px",
-        // sm: '640px',
-        // md: '768px',
-        // lg: '1024px',
-        // xl: '1280px',
-        // xlL: '1366px',
-        // xlM: '1440px',
-        // xxM: '1920px',
-        // xxL: '2304px',
-        // xxx: '2560px',
-        // '2xl': '1736px',
-        // '3xl': '2880px'
       },
       colors: {
         mainGray: '#181716',
