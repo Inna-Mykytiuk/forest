@@ -75,7 +75,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
       {/* MOBILE MENU MODAL */}
       {!isAboveMediumScreens && isMenuToggled && (
         <div className="fixed right-0 bottom-0 z-40 h-full w-[300px] 
-        backdrop-opacity-10 backdrop-invert bg-primary200/60
+         backdrop-invert bg-primary200
         drop-shadow-xl">
           {/* CLOSE ICON */}
           <div className="flex justify-end p-12">
