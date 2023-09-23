@@ -4,7 +4,7 @@ import Home from "./scenes/home";
 import { SelectedPage } from "./shared/types";
 import Benefits from "./scenes/benefits";
 import TreesFacts from "./scenes/TreesFacts";
-// import ContactUs from "./scenes/contactUs";
+import ContactUs from "./scenes/contactUs";
 // import Footer from "./scenes/footer";
 
 function App() {
@@ -35,8 +35,8 @@ function App() {
       <Home setSelectedPage={setSelectedPage} />
       <Benefits setSelectedPage={setSelectedPage} />
       <TreesFacts setSelectedPage={setSelectedPage} />
-      {/* <ContactUs setSelectedPage={setSelectedPage} />
-      <Footer/> */}
+      <ContactUs setSelectedPage={setSelectedPage} />
+      {/* <Footer/> */}
     </div>
 
   )
