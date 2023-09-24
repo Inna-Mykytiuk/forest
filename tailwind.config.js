@@ -82,8 +82,6 @@ export default {
 
       },
       backgroundImage: () => ({
-        gradientYellowred: "linear-gradient(90deg, #FF616A 0%, #FFC837 100%)",
-        mobileHome: "url('./assets/HomePageGraphic.png')",
         homeBg: "url('./assets/forest/forest7.jpg')",
       }),
       fontFamily: {

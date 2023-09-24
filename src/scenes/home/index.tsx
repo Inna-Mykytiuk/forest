@@ -4,7 +4,7 @@ import ActionButton from "../../shared/ActionButton";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 import HomePageGraphic from "../../assets/branch/branch2.png";
-import HomeText from "../../assets/forestT.png";
+// import HomeText from "../../assets/forestT.png";
 import SponsorForbes from "../../assets/sponsors/forbes.png";
 import SponsorWtf from "../../assets/sponsors/wtf.png";
 import SponsorWorld from "../../assets/sponsors/world.png";
