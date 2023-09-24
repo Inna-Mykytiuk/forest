@@ -19,6 +19,9 @@ type Props = {
 const Home = ({ setSelectedPage }: Props) => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px");
   const flexBetween = "flex flex-col items-center justify-between";
+  // const picture = "before:absolute before:-top-24 xl:before:-top-32 md:before:content- before:-left-20 before:z-[-1]"
+
+
 
   return (
     <section
@@ -46,40 +49,18 @@ const Home = ({ setSelectedPage }: Props) => {
                 visible: { opacity: 1, x: 0 },
               }}
             >
-              {/* <div className="relative flex">
-                <div className="flex flex-col">
-                  <div className="before:absolute before:-top-24 xl:before:-top-32 md:before:content-evolvetext before:-left-20 before:z-[-1]">
-                  <p className="md:text-[92px] text-[72px] text-rose800 font-black font-family leading-[100px]">Wild Forest</p>
-                  <p className="text-[42px] text-rose800 font-thin tracking-[5px]">Rediscover <span className="text-secondary400">Wonder</span>
-                  </p>
-                  </div>
-                </div>
-              </div> */}
+
               <div className="relative flex">
                 <div className="flex flex-col">
-                  <div className="before:absolute before:-top-24 xl:before:-top-32 md:before:content-[url('./src/assets/forestT.png')] before:-left-20 before:z-[-1]">
-                  <p className="md:text-[92px] text-[72px] text-rose800 font-black font-family leading-[100px]">Wild Forest</p>
-                  <p className="text-[42px] text-rose800 font-thin tracking-[5px]">Rediscover <span className="text-secondary400">Wonder</span>
-                  </p>
+                  <div className="before:absolute before:-top-24 xl:before:-top-32 md:before:content-evolvetext before:-left-20 before:z-[-1]">
+                    <p className="md:text-[92px] text-[72px] text-rose800 font-black font-family leading-[100px]">Wild Forest</p>
+                    <p className="text-[42px] text-rose800 font-thin tracking-[5px]">Rediscover <span className="text-secondary400">Wonder</span>
+                    </p>
                   </div>
                 </div>
               </div>
 
-              {/* <div className="relative flex">
-                <div className="flex flex-col">
-                  <div className="before:absolute before:-top-24 xl:before:-top-32 md:before:before:-left-20 before:z-[-1]">
-                    <img
-                      src={HomeText}
-                      alt="Home Text"
-                      className="md:text-[92px] text-[72px] text-rose800 font-black font-family leading-[100px]"
-                    />
-                    <p className="md:text-[92px] text-[72px] text-rose800 font-black font-family leading-[100px]">Wild Forest</p>
-                    <p className="text-[42px] text-rose800 font-thin tracking-[5px]">
-                      Rediscover <span className="text-secondary400">Wonder</span>
-                    </p>
-                  </div>
-                </div>
-              </div> */}
+
 
               <p className="mt-5 font-montserrat sm:text-sm text-md md:text-primary100  xl:text-mainGreen">
                 What do trees feel, How They Communicate?
@@ -119,9 +100,6 @@ const Home = ({ setSelectedPage }: Props) => {
           <div className="flex xs:basis-2/5 sm:basis-3/5 justify-center md:z-10 md:ml-40 md:mt-16 md:justify-end">
             <img alt="home-page-graphic" src={HomePageGraphic}></img>
           </div>
-
-
-
         </motion.div>
         {/* SPONSORS */}
         {isAboveMediumScreens && (
@@ -152,3 +130,30 @@ const Home = ({ setSelectedPage }: Props) => {
 }
 
 export default Home
+
+
+{/* <div className="relative flex">
+                <div className="flex flex-col">
+                  <div className="before:absolute before:-top-24 xl:before:-top-32 md:before:content-evolvetext before:-left-20 before:z-[-1]">
+                  <p className="md:text-[92px] text-[72px] text-rose800 font-black font-family leading-[100px]">Wild Forest</p>
+                  <p className="text-[42px] text-rose800 font-thin tracking-[5px]">Rediscover <span className="text-secondary400">Wonder</span>
+                  </p>
+                  </div>
+                </div>
+              </div> */}
+
+{/* <div className="relative flex">
+                <div className="flex flex-col">
+                  <div className="before:absolute before:-top-24 xl:before:-top-32 md:before:before:-left-20 before:z-[-1]">
+                    <img
+                      src={HomeText}
+                      alt="Home Text"
+                      className="md:text-[92px] text-[72px] text-rose800 font-black font-family leading-[100px]"
+                    />
+                    <p className="md:text-[92px] text-[72px] text-rose800 font-black font-family leading-[100px]">Wild Forest</p>
+                    <p className="text-[42px] text-rose800 font-thin tracking-[5px]">
+                      Rediscover <span className="text-secondary400">Wonder</span>
+                    </p>
+                  </div>
+                </div>
+              </div> */}
