@@ -24,14 +24,14 @@ const Home = ({ setSelectedPage }: Props) => {
       id="home"
       className="gap-16 bg-homeBg py-20 h-full md:pb-0 md:py-[100px]"
     >
-      <div className={`${flexBetween} mx-auto w-5/6`}>
+      <div className={`${flexBetween} mx-auto w-5/6 flex flex-col items-center justify-between h-full`}>
         {/* IMAGE AND MAIN HEADER */}
         <motion.div
-          className="md:flex mx-auto w-5/6 items-center justify-center md:h-5/6"
+          className="md:flex mx-auto w-5/6 items-center justify-center md:h-5/6 flex xs:flex-col md:flex-row  h-full"
           onViewportEnter={() => setSelectedPage(SelectedPage.Home)}
         >
           {/* MAIN HEADER */}
-          <div className="z-10 sm:mt-16 md:mt-32 md:basis-3/5">
+          <div className="z-10 sm:mt-16 md:mt-32 md:basis-3/5 ">
 
             {/* HEADINGS */}
             <motion.div
@@ -91,7 +91,7 @@ const Home = ({ setSelectedPage }: Props) => {
 
           {/* IMAGE */}
 
-          <div className="flex xs:basis-2/5 sm:basis-3/5 justify-center md:z-10 md:ml-40 md:mt-16 md:justify-end">
+          <div className="hidden sm:flex sm:w-[600px] sm:h-[400px] mx-auto  justify-center md:z-10 md:ml-auto md:mt-16 md:justify-end">
             <img alt="home-page-graphic" src={HomePageGraphic}></img>
           </div>
         </motion.div>
