@@ -48,7 +48,6 @@ const Home = ({ setSelectedPage }: Props) => {
               <div className="relative flex">
                 <div className="flex flex-col">
                   <div className="before:absolute before:-top-24 xl:before:-top-32 md:before:content-evolvetext before:-left-20 before:z-[-1]">
-                  {/* <img alt="home-page-text" src={HomePageText}></img> */}
                   <p className="md:text-[92px] text-[72px] text-rose800 font-black font-family leading-[100px]">Wild Forest</p>
                   <p className="text-[42px] text-rose800 font-thin tracking-[5px]">Rediscover <span className="text-secondary400">Wonder</span>
                   </p>
@@ -90,9 +89,12 @@ const Home = ({ setSelectedPage }: Props) => {
           </div>
 
           {/* IMAGE */}
-          <div className="flex basis-3/5 justify-center md:z-10 md:ml-40 md:mt-16 md:justify-end">
-            <img alt="home-page-graphic" src={HomePageGraphic}></img>
-          </div>
+
+          <div className="flex xs:basis-2/5 sm:basis-3/5 justify-center md:z-10 md:ml-40 md:mt-16 md:justify-end">
+          <img alt="home-page-graphic" src={HomePageGraphic}></img>
+        </div>
+
+          
 
         </motion.div>
         {/* SPONSORS */}
