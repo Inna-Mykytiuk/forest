@@ -83,6 +83,7 @@ export default {
       },
       backgroundImage: () => ({
         homeBg: "url('./assets/forest/forest7.jpg')",
+        
       }),
       fontFamily: {
         dmsans: ["DM Sans", "sans-serif"],
@@ -91,6 +92,8 @@ export default {
       },
       evolvetext: "url('./src/assets/forestT.png')",
       content: {
+        homeBg: "url('./assets/forest/forest7.jpg')",
+        foresttext: "url('./assets/forest/foresttext.png')",
         // evolvetext: "url('./src/assets/forestT.png')",
         abstractwaves: "url('./src/assets/AbstractWaves.png')",
         circles: "url('./src/assets/Circles.png')",
