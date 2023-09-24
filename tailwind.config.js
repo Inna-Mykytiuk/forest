@@ -90,11 +90,9 @@ export default {
         montserrat: ["Montserrat", "sans-serif"],
         nunito: ["Nunito Sans", "sans-serif"],
       },
-      evolvetext: "url('./src/assets/forestT.png')",
       content: {
         homeBg: "url('./assets/forest/forest7.jpg')",
         foresttext: "url('./assets/forest/foresttext.png')",
-        // evolvetext: "url('./src/assets/forestT.png')",
         abstractwaves: "url('./src/assets/AbstractWaves.png')",
         circles: "url('./src/assets/Circles.png')",
       },  
