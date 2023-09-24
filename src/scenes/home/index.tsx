@@ -4,6 +4,7 @@ import ActionButton from "../../shared/ActionButton";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 import HomePageGraphic from "../../assets/branch/branch2.png";
+import HomeText from "../../assets/forestT.png";
 import SponsorForbes from "../../assets/sponsors/forbes.png";
 import SponsorWtf from "../../assets/sponsors/wtf.png";
 import SponsorWorld from "../../assets/sponsors/world.png";
@@ -45,7 +46,7 @@ const Home = ({ setSelectedPage }: Props) => {
                 visible: { opacity: 1, x: 0 },
               }}
             >
-              <div className="relative flex">
+              {/* <div className="relative flex">
                 <div className="flex flex-col">
                   <div className="before:absolute before:-top-24 xl:before:-top-32 md:before:content-evolvetext before:-left-20 before:z-[-1]">
                   <p className="md:text-[92px] text-[72px] text-rose800 font-black font-family leading-[100px]">Wild Forest</p>
@@ -53,7 +54,32 @@ const Home = ({ setSelectedPage }: Props) => {
                   </p>
                   </div>
                 </div>
+              </div> */}
+              <div className="relative flex">
+                <div className="flex flex-col">
+                  <div className="before:absolute before:-top-24 xl:before:-top-32 md:before:content-[url('./src/assets/forestT.png')] before:-left-20 before:z-[-1]">
+                  <p className="md:text-[92px] text-[72px] text-rose800 font-black font-family leading-[100px]">Wild Forest</p>
+                  <p className="text-[42px] text-rose800 font-thin tracking-[5px]">Rediscover <span className="text-secondary400">Wonder</span>
+                  </p>
+                  </div>
+                </div>
               </div>
+
+              {/* <div className="relative flex">
+                <div className="flex flex-col">
+                  <div className="before:absolute before:-top-24 xl:before:-top-32 md:before:before:-left-20 before:z-[-1]">
+                    <img
+                      src={HomeText}
+                      alt="Home Text"
+                      className="md:text-[92px] text-[72px] text-rose800 font-black font-family leading-[100px]"
+                    />
+                    <p className="md:text-[92px] text-[72px] text-rose800 font-black font-family leading-[100px]">Wild Forest</p>
+                    <p className="text-[42px] text-rose800 font-thin tracking-[5px]">
+                      Rediscover <span className="text-secondary400">Wonder</span>
+                    </p>
+                  </div>
+                </div>
+              </div> */}
 
               <p className="mt-5 font-montserrat sm:text-sm text-md md:text-primary100  xl:text-mainGreen">
                 What do trees feel, How They Communicate?
@@ -91,10 +117,10 @@ const Home = ({ setSelectedPage }: Props) => {
           {/* IMAGE */}
 
           <div className="flex xs:basis-2/5 sm:basis-3/5 justify-center md:z-10 md:ml-40 md:mt-16 md:justify-end">
-          <img alt="home-page-graphic" src={HomePageGraphic}></img>
-        </div>
+            <img alt="home-page-graphic" src={HomePageGraphic}></img>
+          </div>
 
-          
+
 
         </motion.div>
         {/* SPONSORS */}
@@ -121,8 +147,6 @@ const Home = ({ setSelectedPage }: Props) => {
           </div>
         )}
       </div>
-
-
     </section>
   )
 }

@@ -153,7 +153,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                 alt="contact-us-page-graphic"
                 src={ContactUsPageGraphic}
               />
-              <img src={Forest } alt="tree" className="w-full absolute md:-bottom-[120px] xl:-bottom-[200px] right-[50px] z-[1] ">
+              <img src={Forest} alt="tree" className="w-full absolute md:-bottom-[120px] xl:-bottom-[200px] right-[50px] z-[1] ">
               </img>
             </motion.div>}
 
