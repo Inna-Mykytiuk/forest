@@ -4,7 +4,6 @@ import ActionButton from "../../shared/ActionButton";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 import HomePageGraphic from "../../assets/branch/branch2.png";
-// import HomeText from "../../assets/forestT.png";
 import SponsorForbes from "../../assets/sponsors/forbes.png";
 import SponsorWtf from "../../assets/sponsors/wtf.png";
 import SponsorWorld from "../../assets/sponsors/world.png";
@@ -19,9 +18,6 @@ type Props = {
 const Home = ({ setSelectedPage }: Props) => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px");
   const flexBetween = "flex flex-col items-center justify-between";
-  // const picture = "before:absolute before:-top-24 xl:before:-top-32 md:before:content- before:-left-20 before:z-[-1]"
-
-
 
   return (
     <section
@@ -53,14 +49,12 @@ const Home = ({ setSelectedPage }: Props) => {
               <div className="relative flex">
                 <div className="flex flex-col">
                   <div className="before:absolute before:-top-24 xl:before:-top-32 md:before:content-foresttext before:-left-20 before:z-[-1]">
-                    <p className="md:text-[92px] text-[72px] text-rose800 font-black font-family leading-[100px]">Wild Forest</p>
-                    <p className="text-[42px] text-rose800 font-thin tracking-[5px]">Rediscover <span className="text-secondary400">Wonder</span>
+                    <p className="text-[46px] md:text-[92px] text-rose800 font-black font-family leading-[50px] sm:leading-[100px]">Wild Forest</p>
+                    <p className="text-[36px] sm:text-[42px] text-rose800 font-thin tracking-[5px]">Rediscover <span className="text-secondary400">Wonder</span>
                     </p>
                   </div>
                 </div>
               </div>
-
-
 
               <p className="mt-5 font-montserrat sm:text-sm text-md md:text-primary100  xl:text-mainGreen">
                 What do trees feel, How They Communicate?
@@ -132,28 +126,3 @@ const Home = ({ setSelectedPage }: Props) => {
 export default Home
 
 
-{/* <div className="relative flex">
-                <div className="flex flex-col">
-                  <div className="before:absolute before:-top-24 xl:before:-top-32 md:before:content-evolvetext before:-left-20 before:z-[-1]">
-                  <p className="md:text-[92px] text-[72px] text-rose800 font-black font-family leading-[100px]">Wild Forest</p>
-                  <p className="text-[42px] text-rose800 font-thin tracking-[5px]">Rediscover <span className="text-secondary400">Wonder</span>
-                  </p>
-                  </div>
-                </div>
-              </div> */}
-
-{/* <div className="relative flex">
-                <div className="flex flex-col">
-                  <div className="before:absolute before:-top-24 xl:before:-top-32 md:before:before:-left-20 before:z-[-1]">
-                    <img
-                      src={HomeText}
-                      alt="Home Text"
-                      className="md:text-[92px] text-[72px] text-rose800 font-black font-family leading-[100px]"
-                    />
-                    <p className="md:text-[92px] text-[72px] text-rose800 font-black font-family leading-[100px]">Wild Forest</p>
-                    <p className="text-[42px] text-rose800 font-thin tracking-[5px]">
-                      Rediscover <span className="text-secondary400">Wonder</span>
-                    </p>
-                  </div>
-                </div>
-              </div> */}
