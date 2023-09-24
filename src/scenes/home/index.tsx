@@ -59,14 +59,6 @@ const Home = ({ setSelectedPage }: Props) => {
                   </div>
                 </div>
               </div>
-              <div className="relative flex">
-                <div className="flex flex-col">
-                  <div className="before:absolute before:-top-24 xl:before:-top-32 md:before:content-homeBg before:-left-20 before:z-[-1]">
-                    <p className="md:text-[92px] text-[72px] text-rose800 font-black font-family leading-[100px]">Wild Forest</p>
-
-                  </div>
-                </div>
-              </div>
 
 
 
