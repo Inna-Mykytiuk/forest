@@ -5,12 +5,14 @@ type Props = {
   page: string;
   selectedPage: SelectedPage;
   setSelectedPage: (value:SelectedPage) => void;
+  close: () => void; 
 }
 
 const Link = ({
   page,
   selectedPage,
-  setSelectedPage
+  setSelectedPage,
+  close
 }: Props) => {
   const lowerCasePage = page.toLowerCase().replace(/ /g, "") as SelectedPage;
 
@@ -20,7 +22,10 @@ const Link = ({
     className={`${selectedPage === lowerCasePage? "text-secondary500" : ""} 
     transition duration-300 ease-in-out hover:text-secondary500 `}
     href={`#${lowerCasePage}`}
-    onClick={() => setSelectedPage(lowerCasePage)}
+    onClick={() => {
+      setSelectedPage(lowerCasePage);
+      close(); // Закрити модальне вікно після кліку на посилання
+    }}
     >
       {page}
     </AnchorLink>

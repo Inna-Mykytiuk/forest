@@ -1,10 +1,10 @@
-import { useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import Logo from "../../assets/treeLogo.png";
 import { SelectedPage } from "../../shared/types";
 import Link from "./Link";
 import useMediaQuery from "../../hooks/useMediaQuery";
 import ActionButton from "../../shared/ActionButton";
+import { useToggle } from "../../shared/useToggle";
 
 type Props = {
   isTopOfPage: boolean;
@@ -14,9 +14,9 @@ type Props = {
 
 const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
   const flexBetween = "flex items-center justify-between";
-  const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
   const navbarBackground = isTopOfPage ? "" : "drop-shadow backdrop-opacity-50 backdrop-invert bg-primary200/60 drop-shadow-xl";
+  const { isOpen, toggle, close } = useToggle(false); // Додали close
 
   return (
     <nav>
@@ -36,25 +36,28 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                     page="Home"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
+                    close={close} // Додали close
                   />
                   <Link
                     page="Benefits"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
+                    close={close} // Додали close
                   />
                   <Link
                     page="Facts"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
+                    close={close} // Додали close
                   />
                   <Link
                     page="Contact Us"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
+                    close={close} // Додали close
                   />
                 </div>
                 <div className={`${flexBetween} gap-8`}>
-                  {/* <p>Sign In</p> */}
                   <ActionButton setSelectedPage={setSelectedPage} >
                     Become a Member
                   </ActionButton>
@@ -63,7 +66,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
             ) : (
               <button
                 className="rounded-full bg-secondary500 p-2"
-                onClick={() => setIsMenuToggled(!isMenuToggled)}
+                onClick={toggle}
               >
                 <Bars3Icon className="h-6 w-6 text-white" />
               </button>
@@ -73,13 +76,14 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
       </div>
 
       {/* MOBILE MENU MODAL */}
-      {!isAboveMediumScreens && isMenuToggled && (
-        <div className="fixed right-0 bottom-0 z-40 h-full w-[300px] 
-         backdrop-invert bg-primary200
-        drop-shadow-xl">
+      {!isAboveMediumScreens && isOpen && ( 
+        <div
+          className="fixed right-0 bottom-0 z-40 h-full w-[300px] 
+          backdrop-invert bg-primary200 drop-shadow-xl"
+        >
           {/* CLOSE ICON */}
           <div className="flex justify-end p-12">
-            <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
+            <button onClick={toggle}>
               <XMarkIcon className="h-6 w-6 text-gray-400" />
             </button>
           </div>
@@ -90,21 +94,25 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
               page="Home"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
+              close={close} // Додали close
             />
             <Link
               page="Benefits"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
+              close={close} // Додали close
             />
             <Link
               page="Facts"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
+              close={close} // Додали close
             />
             <Link
               page="Contact Us"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
+              close={close} // Додали close
             />
           </div>
         </div>
