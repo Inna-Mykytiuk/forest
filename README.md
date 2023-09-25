@@ -40,4 +40,6 @@ Animation Libraries: Libraries like CSS animations and React Spring may be used 
 By combining these technologies, the Wild Forest Landing Page aims to deliver an informative and engaging experience that encourages visitors to appreciate the importance of wild forests and the incredible world of tree communication. It serves as a testament to the power of technology in educating and advocating for environmental conservation.
 
 
-![preview](https://github.com/Inna-Mykytiuk/forest/blob/main/src/assets/forest.jpg)
+![preview](https://github.com/Inna-Mykytiuk/forest/blob/main/src/assets/forest11.jpg)
+![preview](https://github.com/Inna-Mykytiuk/forest/blob/main/src/assets/forest22.jpg)
+
