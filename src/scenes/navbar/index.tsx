@@ -16,7 +16,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
   const flexBetween = "flex items-center justify-between";
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
   const navbarBackground = isTopOfPage ? "" : "drop-shadow backdrop-opacity-50 backdrop-invert bg-primary200/60 drop-shadow-xl";
-  const { isOpen, toggle, close } = useToggle(false); // Додали close
+  const { isOpen, toggle, close } = useToggle(false);
 
   return (
     <nav>
@@ -36,25 +36,25 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                     page="Home"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
-                    close={close} // Додали close
+                    close={close} 
                   />
                   <Link
                     page="Benefits"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
-                    close={close} // Додали close
+                    close={close} 
                   />
                   <Link
                     page="Facts"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
-                    close={close} // Додали close
+                    close={close}
                   />
                   <Link
                     page="Contact Us"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
-                    close={close} // Додали close
+                    close={close}
                   />
                 </div>
                 <div className={`${flexBetween} gap-8`}>
@@ -94,25 +94,25 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
               page="Home"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
-              close={close} // Додали close
+              close={close} 
             />
             <Link
               page="Benefits"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
-              close={close} // Додали close
+              close={close} 
             />
             <Link
               page="Facts"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
-              close={close} // Додали close
+              close={close} 
             />
             <Link
               page="Contact Us"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
-              close={close} // Додали close
+              close={close} 
             />
           </div>
         </div>

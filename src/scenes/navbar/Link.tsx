@@ -24,7 +24,7 @@ const Link = ({
     href={`#${lowerCasePage}`}
     onClick={() => {
       setSelectedPage(lowerCasePage);
-      close(); // Закрити модальне вікно після кліку на посилання
+      close();
     }}
     >
       {page}

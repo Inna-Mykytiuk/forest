@@ -74,7 +74,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
           >
             <HText>Explore, Adventure, and Reconnect in the Forest</HText>
             <p className="my-5 text-md">
-            Forests play a vital role in our world, and their importance cannot be overstated.
+              Forests play a vital role in our world, and their importance cannot be overstated.
             </p>
           </motion.div>
 
@@ -111,21 +111,21 @@ const Benefits = ({ setSelectedPage }: Props) => {
             <div>
               {/* TITLE */}
               <div className="relative">
-                  <motion.div
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true, amount: 0.5 }}
-                    transition={{ duration: 0.5 }}
-                    variants={{
-                      hidden: { opacity: 0, x: 50 },
-                      visible: { opacity: 1, x: 0 },
-                    }}
-                  >
-                    <HText>
+                <motion.div
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true, amount: 0.5 }}
+                  transition={{ duration: 0.5 }}
+                  variants={{
+                    hidden: { opacity: 0, x: 50 },
+                    visible: { opacity: 1, x: 0 },
+                  }}
+                >
+                  <HText>
                     "The Vital Importance of Forests: Nature's Lifeline and Economic Backbone"{" "}
-                      <span className="text-secondary400">Backbone</span>
-                    </HText>
-                  </motion.div>
+                    <span className="text-secondary400">Backbone</span>
+                  </HText>
+                </motion.div>
 
               </div>
 
@@ -141,22 +141,22 @@ const Benefits = ({ setSelectedPage }: Props) => {
                 }}
               >
                 <p className="my-5">
-                Forests are incredibly rich in biodiversity, providing habitat and sustenance for countless plant and animal species. They are often referred to as the "lungs of the Earth" for their role in supporting diverse ecosystems.
-                Forests are essential for industries such as forestry, agriculture, and tourism, contributing to economic growth and stability in many regions.
-                Forests are natural watersheds, regulating the flow of water in rivers and streams. They help prevent erosion, filter pollutants, and maintain the quality of freshwater sources.
+                  Forests are incredibly rich in biodiversity, providing habitat and sustenance for countless plant and animal species. They are often referred to as the "lungs of the Earth" for their role in supporting diverse ecosystems.
+                  Forests are essential for industries such as forestry, agriculture, and tourism, contributing to economic growth and stability in many regions.
+                  Forests are natural watersheds, regulating the flow of water in rivers and streams. They help prevent erosion, filter pollutants, and maintain the quality of freshwater sources.
                 </p>
                 <p className="mb-5">
-                Forests are not only a source of beauty and inspiration but also critical for the well-being of the planet and all its inhabitants, including humans. Protecting and conserving forests is a shared responsibility for the health of our planet and future generations.
+                  Forests are not only a source of beauty and inspiration but also critical for the well-being of the planet and all its inhabitants, including humans. Protecting and conserving forests is a shared responsibility for the health of our planet and future generations.
                 </p>
               </motion.div>
 
               {/* BUTTON */}
               <div className="relative mt-16">
-                {isAboveMediumScreens && <img alt="wtf-sponsor" src={Branch} className="w-[500px] h-[600px]  absolute -bottom-48 -right-20 z-[-1] "/>}
-                
-                  <ActionButton setSelectedPage={setSelectedPage}>
-                    Join Now
-                  </ActionButton>
+                {isAboveMediumScreens && <img alt="wtf-sponsor" src={Branch} className="w-[500px] h-[600px]  absolute -bottom-48 -right-20 z-[-1] " />}
+
+                <ActionButton setSelectedPage={setSelectedPage}>
+                  Join Now
+                </ActionButton>
               </div>
 
             </div>
