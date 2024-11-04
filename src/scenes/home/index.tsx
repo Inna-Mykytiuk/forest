@@ -22,7 +22,7 @@ const Home = ({ setSelectedPage }: Props) => {
   return (
     <section
       id="home"
-      className="gap-16 bg-homeBg py-20 h-full md:pb-0 md:py-[100px]"
+      className="gap-16 bg-homeBg bg-cover bg-no-repeat bg-center py-20 h-full md:pb-0 md:py-[100px]"
     >
       <div className={`${flexBetween} mx-auto w-5/6 flex flex-col items-center justify-between h-full`}>
         {/* IMAGE AND MAIN HEADER */}
