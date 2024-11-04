@@ -56,7 +56,7 @@ const Home = ({ setSelectedPage }: Props) => {
                 </div>
               </div>
 
-              <p className="mt-5 font-montserrat sm:text-sm text-md md:text-primary100  xl:text-mainGreen">
+              <p className="mt-5 font-montserrat sm:text-sm text-md text-primary100 xl: max-w-[700px]">
                 What do trees feel, How They Communicate?
                 Do you know that trees experience pain and have memories and that tree parents
                 live together with their children?
